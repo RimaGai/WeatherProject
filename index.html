@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row enterCity">
+        <form id="enter-city">
+          <input
+            type="text"
+            id="city-input"
+            class="form-control col-7"
+            placeholder="Change city"
+            autofocus
+            autocomplete="off"
+          />
+          <div class="col-3 searchButton">
+            <input type="submit" value="Search" class="btn btn-primary" />
+          </div>
+          <button id="current-location" type="button" class="btn btn-success">
+            Current
+          </button>
+        </form>
+      </div>
+      <h1 id="choose-city"></h1>
+      <h3>Sunday 19:43</h3>
+      <div class="row">
+        <div class="col-6">
+          <img src="images/sunny.svg" alt="sun" width="200" />
+          <span id="temperature"> </span>
+          <span class="units">°C</span>
+        </div>
+        <div class="col-6 conditions">
+          <ul>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span>km/h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Monday
+          <img src="images/sunny.svg" alt="sun" />
+          <div class="temperature">22º/16º</div>
+        </div>
+        <div class="col">
+          Tuesday
+          <img src="images/suncloudy.svg" alt="sunwithclouds" />
+          <div class="temperature">23º/17º</div>
+        </div>
+        <div class="col">
+          Wednesday
+          <img src="images/suncloudy.svg" alt="sunwithclouds" />
+          <div class="temperature">23º/16º</div>
+        </div>
+        <div class="col">
+          Thursday
+          <img src="images/sunrain.svg" alt="sunwithrain" />
+          <div class="temperature">21º/16º</div>
+        </div>
+        <div class="col">
+          Friday
+          <img src="images/sunrain.svg" alt="sunwithrain" />
+          <div class="temperature">21º/15º</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
