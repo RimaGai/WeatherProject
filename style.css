@@ -1,0 +1,47 @@
+h1,
+h3 {
+  font-family: "Merriweather", serif;
+  margin: 10px 20px;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 750px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #d9f2ff;
+  border: 2px solid #5b73e0;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+.enterCity {
+  padding: 20px 30px;
+  width: 300px;
+}
+.searchButton {
+  margin-top: 10px;
+}
+#temperature {
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+  font-weight: 900;
+}
+.units {
+  position: relative;
+  top: -15px;
+  font-weight: bold;
+}
+.conditions {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.col {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
