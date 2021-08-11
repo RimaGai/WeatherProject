@@ -46,6 +46,7 @@ li {
   margin-bottom: 20px;
 }
 #github-link {
+  display: block;
   text-align: center;
   font-family: "Merriweather", serif;
 }
