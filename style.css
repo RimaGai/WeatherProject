@@ -1,10 +1,15 @@
 h1,
-h3 {
+h3,
+h4 {
   font-family: "Merriweather", serif;
   margin: 10px 20px;
 }
 li {
   list-style: none;
+}
+h4:first-letter {
+  text-transform: capitalize;
+
 }
 .container {
   width: 750px;
