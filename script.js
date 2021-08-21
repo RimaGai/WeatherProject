@@ -30,6 +30,8 @@ function showWeather(response) {
     response.data.wind.speed
   );
   document.querySelector("#choose-city").innerHTML = response.data.name;
+  document.querySelector("#icon").setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  
 }
 
 function search(city) {
