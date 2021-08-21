@@ -15,13 +15,11 @@ li {
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
 }
-.enterCity {
+.weather-app {
   padding: 20px 30px;
-  width: 300px;
+  
 }
-.searchButton {
-  margin-top: 10px;
-}
+
 #temperature {
   font-family: "Merriweather", serif;
   font-size: 40px;
@@ -38,7 +36,7 @@ li {
   margin-top: 50px;
 }
 
-.col {
+.forecast {
   text-align: center;
   font-family: "Merriweather", serif;
   font-size: 20px;

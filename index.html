@@ -22,22 +22,28 @@
   </head>
   <body>
     <div class="container">
-      <div class="row enterCity">
+      <div class="weather-app">
         <form id="enter-city">
+           <div class="row">
+             <div class="col-6">
           <input
             type="text"
             id="city-input"
-            class="form-control col-7"
+            class="form-control"
             placeholder="Change city"
             autofocus
             autocomplete="off"
           />
-          <div class="col-3 searchButton">
-            <input type="submit" value="Search" class="btn btn-primary" />
           </div>
-          <button id="current-location" type="button" class="btn btn-success">
+          <div class="col-3">
+            <input type="submit" value="Search" class="btn btn-primary w-100" />
+          </div>
+            <div class="col-3">
+ <button id="current-location" class="btn btn-success w-100">
             Current
           </button>
+          </div>
+          </div>
         </form>
       </div>
       <h1 id="choose-city"></h1>
@@ -55,6 +61,7 @@
           </ul>
         </div>
       </div>
+      <div class="forecast">
       <div class="row">
         <div class="col">
           Monday
@@ -81,6 +88,7 @@
           <img src="images/sunrain.svg" alt="sunwithrain" />
           <div class="temperature">21º/15º</div>
         </div>
+      </div>
       </div>
     </div>
     <span id="github-link"> <a href="https://github.com/RimaGai/WeatherProject" target="blank"> Open source code</a> by Rima Gaileviciute</span>
