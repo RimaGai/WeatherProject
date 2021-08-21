@@ -1,5 +1,5 @@
+function formatTime() {
 let now = new Date();
-
 let days = [
   "Sunday",
   "Monday",
@@ -17,9 +17,11 @@ if (hours < 10) {
 let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
+} 
+return `${day} ${hours}:${minutes}`;
 }
-let h3 = document.querySelector("h3");
-h3.innerHTML = `${day} ${hours}:${minutes}`;
+
+document.querySelector("#date").innerHTML = formatTime();
 
 function showWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
