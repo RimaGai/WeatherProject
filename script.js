@@ -1,30 +1,31 @@
 function formatTime() {
-let now = new Date();
-let days = [
-  "Sunday",
-  "Monday",
-  "Tueday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
-let hours = now.getHours();
-if (hours < 10) {
-  hours = `0${hours}`;
-}
-let minutes = now.getMinutes();
-if (minutes < 10) {
-  minutes = `0${minutes}`;
-} 
-return `${day} ${hours}:${minutes}`;
+  let now = new Date();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tueday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[now.getDay()];
+  let hours = now.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = now.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${day} ${hours}:${minutes}`;
 }
 
 document.querySelector("#date").innerHTML = formatTime();
 
 function showWeather(response) {
-  document.querySelector("#current-weather").innerHTML = response.data.weather[0].description;
+  document.querySelector("#current-weather").innerHTML =
+    response.data.weather[0].description;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
@@ -34,8 +35,15 @@ function showWeather(response) {
     response.data.wind.speed
   );
   document.querySelector("#choose-city").innerHTML = response.data.name;
-  document.querySelector("#icon").setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-  document.querySelector("#icon").setAttribute("alt", response.data.weather[0].description);
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+  document
+    .querySelector("#icon")
+    .setAttribute("alt", response.data.weather[0].description);
 }
 
 function search(city) {
@@ -62,12 +70,12 @@ function currentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
-function displayFahrenheit (event) {
+function displayFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   celcius.classList.remove("active");
   fahrenheit.classList.add("active");
-  let fahrenheitTemperature = (celciusTemperature * 9) / 5 +32;
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
