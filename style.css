@@ -9,7 +9,6 @@ li {
 }
 h4:first-letter {
   text-transform: capitalize;
-
 }
 .container {
   width: 750px;
@@ -22,7 +21,6 @@ h4:first-letter {
 }
 .weather-app {
   padding: 20px 30px;
-  
 }
 
 #temperature {
@@ -38,11 +36,12 @@ h4:first-letter {
 .units .active {
   color: black;
   cursor: default;
-  }
-.units .active:hover{
+}
+.units .active:hover {
   text-decoration: none;
 }
-#celcius, #fahrenheit {
+#celcius,
+#fahrenheit {
   text-decoration: none;
 }
 .conditions {
@@ -51,7 +50,7 @@ h4:first-letter {
   margin-top: 50px;
 }
 
-.forecast {
+.weather-forecast {
   text-align: center;
   font-family: "Merriweather", serif;
   font-size: 20px;
