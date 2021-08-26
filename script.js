@@ -146,7 +146,7 @@ function displayCelcius(event) {
 
 let celciusTemperature = null;
 
-let form = document.querySelector("#enter-city");
+let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let fahrenheit = document.querySelector("#fahrenheit");

@@ -14,7 +14,7 @@ h4:first-letter {
   width: 750px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-image: url("images/pexels-benjamin-suter-2361997.jpg");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/008/original/pexels-benjamin-suter-2361997.jpg?1629987772");
   background-size: cover;
   border: 2px solid #8fadae;
   border-radius: 5px;
@@ -23,7 +23,14 @@ h4:first-letter {
 .weather-app {
   padding: 20px 30px;
 }
-
+.btn-primary {
+  background-color: #dd7977;
+  border: none;
+}
+.btn-success {
+  background-color: #b55357;
+  border: none;
+}
 #temperature {
   font-family: "Merriweather", serif;
   font-size: 40px;
