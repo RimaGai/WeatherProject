@@ -1,24 +1,32 @@
-h1,
-h3,
-h4 {
-  font-family: "Merriweather", serif;
-  margin: 10px 20px;
-}
-li {
-  list-style: none;
-}
-h4:first-letter {
-  text-transform: capitalize;
-}
 .container {
   width: 750px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/008/original/pexels-benjamin-suter-2361997.jpg?1629987772");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/034/original/weatherprojectimage.jpg?1629995496");
   background-size: cover;
   border: 2px solid #8fadae;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+.current {
+  font-family: "Merriweather", serif;
+}
+li {
+  list-style: none;
+}
+h1 {
+  margin-left: 30px;
+}
+#current-weather,
+#date {
+  font-size: 20px;
+}
+#current-weather:first-letter {
+  text-transform: capitalize;
+}
+.weather-conditions {
+  margin-left: 4px;
 }
 .weather-app {
   padding: 20px 30px;
@@ -31,14 +39,19 @@ h4:first-letter {
   background-color: #b55357;
   border: none;
 }
+
 #temperature {
   font-family: "Merriweather", serif;
   font-size: 40px;
   font-weight: 900;
 }
+#icon {
+  position: relative;
+  bottom: 20px;
+}
 .units {
   position: relative;
-  top: -15px;
+  top: -20px;
   font-weight: bold;
 }
 .units .active {
@@ -55,7 +68,7 @@ h4:first-letter {
 .conditions {
   font-family: "Merriweather", serif;
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .weather-forecast {
