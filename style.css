@@ -14,8 +14,9 @@ h4:first-letter {
   width: 750px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #d9f2ff;
-  border: 2px solid #5b73e0;
+  background-image: url("images/pexels-benjamin-suter-2361997.jpg");
+  background-size: cover;
+  border: 2px solid #8fadae;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
 }
