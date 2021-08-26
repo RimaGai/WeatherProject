@@ -35,11 +35,16 @@ h1 {
   background-color: #dd7977;
   border: none;
 }
+.btn-primary:hover {
+  background-color: #b55357;
+}
 .btn-success {
   background-color: #b55357;
   border: none;
 }
-
+.btn-success:hover {
+  background-color: #dd7977;
+}
 #temperature {
   font-family: "Merriweather", serif;
   font-size: 40px;
