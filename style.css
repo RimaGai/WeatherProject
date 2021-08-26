@@ -31,18 +31,20 @@ h1 {
 .weather-app {
   padding: 20px 30px;
 }
-.btn-primary {
+.btn {
   background-color: #dd7977;
   border: none;
+  color: white;
 }
-.btn-primary:hover {
+.btn:hover {
   background-color: #b55357;
 }
-.btn-success {
+#current-location {
+  color: white;
   background-color: #b55357;
   border: none;
 }
-.btn-success:hover {
+#current-location:hover {
   background-color: #dd7977;
 }
 #temperature {
