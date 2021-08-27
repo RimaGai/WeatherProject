@@ -33,16 +33,15 @@ h1 {
 }
 .btn {
   background-color: #dd7977;
-  border: none;
   color: white;
 }
 .btn:hover {
   background-color: #b55357;
+  color: white;
 }
 #current-location {
   color: white;
   background-color: #b55357;
-  border: none;
 }
 #current-location:hover {
   background-color: #dd7977;
