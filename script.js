@@ -126,32 +126,11 @@ function currentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
-function displayFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  celcius.classList.remove("active");
-  fahrenheit.classList.add("active");
-  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function displayCelcius(event) {
-  event.preventDefault();
-  celcius.classList.add("active");
-  fahrenheit.classList.remove("active");
-  temperature.innerHTML = celciusTemperature;
-}
 
 let celciusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-let fahrenheit = document.querySelector("#fahrenheit");
-fahrenheit.addEventListener("click", displayFahrenheit);
-
-let celcius = document.querySelector("#celcius");
-celcius.addEventListener("click", displayCelcius);
 
 let locationButton = document.querySelector("#current-location");
 locationButton.addEventListener("click", currentLocation);

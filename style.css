@@ -48,8 +48,8 @@ h1 {
 }
 #temperature {
   font-family: "Merriweather", serif;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 50px;
+  font-weight: 600;
 }
 #icon {
   position: relative;
@@ -58,19 +58,9 @@ h1 {
 .units {
   position: relative;
   top: -20px;
-  font-weight: bold;
+  font-weight: 700;
 }
-.units .active {
-  color: black;
-  cursor: default;
-}
-.units .active:hover {
-  text-decoration: none;
-}
-#celcius,
-#fahrenheit {
-  text-decoration: none;
-}
+
 .conditions {
   font-family: "Merriweather", serif;
   font-size: 20px;
