@@ -127,8 +127,6 @@ function currentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-let celciusTemperature = null;
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
